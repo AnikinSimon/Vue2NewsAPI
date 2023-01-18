@@ -6,16 +6,28 @@
       <v-toolbar-title>НОВОСТИ!! Лучшие новости!!!</v-toolbar-title>
     </v-app-bar>
     <v-navigation-drawer v-model="navigation" absolute temporary>
-      <v-select
+      <v-list-item>
+        <v-list-item-content>
+          <v-list-item-title class="text-h6">
+            Настройки запроса
+          </v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+      <v-list-item>
+        <v-select
           :items="countries"
           label="Код страны"
           solo
           v-model="country"
         ></v-select>
+      </v-list-item>
+      <v-list-item>
         <v-text-field
             v-model="keywords"
             label="Ключевые слова"
         ></v-text-field>
+      </v-list-item>
+      <v-list-item>
         <v-btn
           color="primary"
           block
@@ -23,8 +35,9 @@
         >
           Получить новости
         </v-btn>
+      </v-list-item>
     </v-navigation-drawer>
-    <v-main>
+    <v-main app>
       <template>
         <v-container class="grey lighten-5">
           <v-row no-gutters>
