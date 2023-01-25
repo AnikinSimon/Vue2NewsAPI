@@ -38,7 +38,6 @@
       </v-list-item>
     </v-navigation-drawer>
     <v-main app>
-      <template>
         <v-container class="grey lighten-5">
           <v-row no-gutters>
             <v-col v-for="arcticle, index in news" :key="index" cols="12" sm="4">
@@ -77,7 +76,6 @@
             </v-col>
           </v-row>
         </v-container>
-      </template>
     </v-main>
   </v-app>
 </template>
