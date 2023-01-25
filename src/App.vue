@@ -55,21 +55,8 @@
                   </p>
                 </v-card-text>
                 <v-card-actions>
-
                   <v-btn variant="outlined" :href="arcticle.url">
                      Читать полностью 
-                  </v-btn>
-                  <v-spacer></v-spacer>
-                  <v-btn icon>
-                    <v-icon>mdi-heart</v-icon>
-                  </v-btn>
-
-                  <v-btn icon>
-                    <v-icon>mdi-bookmark</v-icon>
-                  </v-btn>
-
-                  <v-btn icon>
-                    <v-icon>mdi-share-variant</v-icon>
                   </v-btn>
                 </v-card-actions>
               </v-card>
